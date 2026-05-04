@@ -1,9 +1,9 @@
 {
-	"name": "reveal.js",
-	"version": "6.0.1",
+	"name": "free-software-success-stories",
+	"version": "0.0.1",
 	"description": "The HTML Presentation Framework",
-	"homepage": "https://revealjs.com",
-	"subdomain": "revealjs",
+	"homepage": "https://glis.codeberg.page",
+	"subdomain": "free-software-success-stories",
 	"license": "MIT",
 	"main": "dist/reveal.js",
 	"module": "dist/reveal.mjs",
