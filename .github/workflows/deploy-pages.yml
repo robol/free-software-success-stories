@@ -33,14 +33,7 @@ jobs:
         run: npm ci
 
       - name: Build project
-        run: npm run build
-
-      - name: Copy presentation files to dist
-        run: |
-          cp index.html dist/
-          cp *.png dist/ 2>/dev/null || true
-          cp *.jpg dist/ 2>/dev/null || true
-          cp *.webp dist/ 2>/dev/null || true
+        run: npm run build:pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
