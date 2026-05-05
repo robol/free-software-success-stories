@@ -15,445 +15,471 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+
+		<style>
+			section {
+				font-size: 0.85em;
+			}
+
+			strong {
+				color: #268bd2;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Storie di successo del software libero</h1>
-
-					<p>
-					Incontri GLIS 2026 &mdash;
-					Leonardo Robol </p>
-					
-					<img src="glis_logo_512.png" width="120" />
-					
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-					## Cosa è il software libero
-					Come software libero (o *free software*) intendiamo un software che rispetta le seguenti libertà:
-					* Libertà di **usarlo**;
-					* Possibilità di **studiarlo**;
-					* Possibilità di **modificarlo** e **ridistribuirlo**.	
-					
-					<small style="float: right;">[Fonte: Free Software Foundation](https://www.gnu.org/philosophy/free-sw.it.html)</small>
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-					### Quindi deve essere gratis?
-
-					Possiamo fare un parallelo con un'automobile:
-
-					* **Automobile libera**: una volta comprata possiamo 
-						* Usarla per andare dove vogliamo;
-						* Aprire il cofano, e capire come funziona;
-
-					* Un'**automobile proprietaria** non garantisce nessuna di queste libertà: 
-					  potremmo essere obbligati a ripararla solo in officine autorizzate<sup>1</sup>.						
-
-					<hr/>
-					<div style="text-align: left; font-size: smaller"><sup>1</sup> 
-						Molto meno distopico di quanto si potrebbe pensare...
-					</div>
-					</script>
-					
-				</section>
-
-				<section data-markdown>
-					### Il software è facile da diffondere
-
-					Al contrario di un'automobile, **riprodurre** il software non 
-					costa nulla; se sviluppo un software utile:
-					* *Chiunque* ne può beneficiare;
-					* Altri possono *migliorarlo*, e io ne guadagnerò.
-
-					**Domanda**: è davvero un modello sostenibile?
-				</section>
-
-				<section data-markdown>
-					## Alcune storie di successo
-
-					Obiettivo di oggi: conoscere alcune storie di software libero, 
-					che magari usiamo anche tutti i giorni senza saperlo.					
-				</section>
-
-				<section data-markdown>
-					### \#1: GNU Project
-					
-					* Alla fine degli anni '70, **Richard Stallman** lavora in un 
-					  laboratorio del MIT;
-					* Un giorno, ha dei problemi con la **stampante**;
-					* Decide di **modificarne il software** per avvisare quando si inceppa.
-
-					Il produttore **non fornisce il codice sorgente**: Stallman non può risolvere il problema. 
-				</section>
-
-				<section>
-					<h3>I sistemi operativi nel 1980: Unix</h3>
-					<img src="unix.png" width="500" />
-				</section>
-
-				<section data-markdown>
-					### GNU e Free Software Foundation
-
-					RMS decide di risolvere il problema alla base:
-
-					* Crea il **progetto GNU** nel 1983 (GNU is Not Unix);
-					* Obiettivo: creare un'alternativa libera a **Unix**;
-					* Fonda la **Free Software Foudation** (FSF) nel 1985.
-
-					![FSF logo](fsf.png) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![GNU logo](gnu.png) 
-				</section>
-
-				<section data-markdown>
-					### ... ha funzionato?
-
-					* La FSF è **attiva** ancora oggi;
-					* Ha creato le **licenze** più usate per il software libero;
-					* Ha cambiato la cultura del software.
-
-					**Pubblicità**: Parleremo di licenze anche nel prossimo incontro, 
-					con Alessandro e Giuseppe.
-				</section>
+<div class="reveal">
+<div class="slides">
+<section>
+	<h1>Storie di successo del software libero</h1>
+
+	<p>
+	Incontri GLIS 2026 &mdash;
+	Leonardo Robol </p>
+	
+	<img src="glis_logo_512.png" width="120" />
+	
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+	## Cosa è il software libero
+	Come software libero (o *free software*) intendiamo un software che rispetta le seguenti libertà:
+	* Libertà di **usarlo**;
+	* Possibilità di **studiarlo**;
+	* Possibilità di **modificarlo** e **ridistribuirlo**.	
+	
+	<small style="float: right;">[Fonte: Free Software Foundation](https://www.gnu.org/philosophy/free-sw.it.html)</small>
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+	### Quindi deve essere gratis?
+
+	Possiamo fare un parallelo con un'automobile:
+
+	* **Automobile libera**: una volta comprata possiamo 
+		* Usarla per andare dove vogliamo;
+		* Aprire il cofano, e capire come funziona;
+
+	* Un'**automobile proprietaria** non garantisce nessuna di queste libertà: 
+		potremmo essere obbligati a ripararla solo in officine autorizzate<sup>1</sup>.						
+
+	<hr/>
+	<div style="text-align: left; font-size: smaller"><sup>1</sup> 
+		Molto meno distopico di quanto si potrebbe pensare...
+	</div>
+	</script>
+</section>
+
+<section data-markdown>
+	### Il software è facile da diffondere
+
+	Al contrario di un'automobile, **riprodurre** il software non 
+	costa nulla; se sviluppo un software utile:
+	* *Chiunque* ne può beneficiare;
+	* Altri possono *migliorarlo*, e io ne guadagnerò.
+
+	**Domanda**: è davvero un modello sostenibile?
+</section>
+
+<section data-markdown>
+	## Alcune storie di successo
+
+	Obiettivo di oggi: conoscere alcune storie di software libero, 
+	che magari usiamo anche tutti i giorni senza saperlo.					
+</section>
+
+<section data-markdown>
+	### \#1: GNU Project
+	
+	* Alla fine degli anni '70, **Richard Stallman** lavora in un 
+		laboratorio del MIT;
+	* Un giorno, ha dei problemi con la **stampante**;
+	* Decide di **modificarne il software** per avvisare quando si inceppa.
+
+	Il produttore **non fornisce il codice sorgente**: Stallman non può risolvere il problema. 
+</section>
+
+<section>
+	<h3>I sistemi operativi nel 1980: Unix</h3>
+	<img src="unix.png" width="500" />
+</section>
+
+<section data-markdown>
+	### GNU e Free Software Foundation
+
+	RMS decide di risolvere il problema alla base:
+
+	* Crea il **progetto GNU** nel 1983 (GNU is Not Unix);
+	* Obiettivo: creare un'alternativa libera a **Unix**;
+	* Fonda la **Free Software Foudation** (FSF) nel 1985.
+
+	![FSF logo](fsf.png) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![GNU logo](gnu.png) 
+</section>
+
+<section data-markdown>
+	### ... ha funzionato?
+
+	* La FSF è **attiva** ancora oggi;
+	* Ha creato le **licenze** più usate per il software libero;
+	* Ha cambiato la cultura del software.
+
+	**Pubblicità**: Parleremo di licenze anche nel prossimo incontro, 
+	con Alessandro e Giuseppe.
+</section>
 
-				<section data-markdown>
-					### ... e il sistema operativo GNU?
-
-					Vengono sviluppati molti software per GNU:
+<section data-markdown>
+	### ... e il sistema operativo GNU?
 
-					* Compilatori: **GCC** (GNU Compiler Collection);
-					* Editor di testo: **Emacs**;
-					* Shell: **Bash**;
-
-					Nel 1990, il progetto GNU è quasi completo: 
-					mancano solo il **kernel** e il **file system**.
-				</section>
-
-				<section data-markdown>
-					### GNU Hurd
-
-					* Il kernel sviluppato per GNU si chiama **Hurd**;
-					* È un progetto tecnicamente molto raffinato ed avanzato (**microkernel**);
-					* Viene sviluppato a partire dal 1990, ma è ancora **incompleto**;
-					* Non è **mai stato completato**, o usato in produzione.
-				</section>
-
-				<section data-markdown>
-					### \#2: Linux
-
-					Nel 1991, **Linus Torvalds** è un giovane studente finlandese di informatica; 
-
-					* Il corso sistemi operativi usa **Minix**: 
-					  una versione di Unix pensata a scopo **didattico**;
-					* È **proprietario**: codice sorgente disponibile, 
-					  ma non modificabile o ridistribuibile;
-				</section>
-
-				<section data-markdown>
-					### Un post su Usenet				
-
-					![Linus Torvalds](linus-email.png)
-				</section>
-
-				<section data-markdown>
-					### Nasce Linux 
-
-					* Nei mesi seguenti il kernel viene sviluppato;
-					* Altri si uniscono al progetto, suggeriscono idee, 
-					  e contribuiscono codice;
-					* È il pezzo mancante per GNU: nasce **GNU/Linux**.
-				</section>
-
-				<section data-markdown>
-					### Le distribuzioni Linux
-
-					* Nascono le **distribuzioni**: Linux viene combinato con GNU e altri software 
-					  per creare dei sistemi completi.
-					* Linux è usato da milioni di persone; è alla base di **Android**, 
-					  il sistema operativo più usato al mondo;
-					* È usato in **supercomputer**, **server**, **TV**, **infotainment**, e sistemi 
-					**domotici**.
-				</section>
-
-				<section data-markdown>
-					### GNU/Linux 
-
-					* Linux non sarebbe stato possibile senza GNU;
-					* GNU non sarebbe utile senza Linux.
-
-					È un esempio di come il software libero possa essere un **bene comune**: ognuno
-					aggiunge qualcosa, e tutti ne beneficiano.
-				</section>
-
-				<section data-markdown>
-					### Licenze libere
-
-					* Linux è rilasciato sotto la **GPL** (GNU General Public License);
-					* La GPL è una licenza **copyleft**: chiunque può 
-					  ridistribuire il software, ma deve farlo con la stessa licenza.
-					* Altre licenze libere: **MIT**, **BSD**, **Apache**, ...
-
-					Per essere libera, una licenza deve garantire le libertà di 
-					**usare**, **modificare**, e **ridistribuire**  il software.
-					Non è sufficiente che il codice sorgente sia disponibile.
-				</section>
-
-				<section data-markdown>
-					### Lo sviluppo di Linux 
-
-					* Dal 1991, Linus Torvalds guida lo sviluppo di Linux;
-					* Oggi è sviluppato da migliaia di persone;
-					* Grandi aziende partecipano: Google, Facebook (Meta), AMD, Intel, Oracle, NVIDIA, ...
-
-					L'uso di una licenze GPL ha **forzato molte aziende** a pubblicare 
-					i loro driver 
-					(vedi AMD, Intel, in qualche forma anche NVIDIA).
-				</section>
+	Vengono sviluppati molti software per GNU:
 
-				<section data-markdown>
-					### \#3: Wikipedia
-
-					* Nel 2001, **Jimmy Wales** e **Larry Sanger** creano Wikipedia: 
-					  una **enciclopedia online**, scritta da volontari;
-					* È rilasciata sotto la licenza **Creative Commons Attribution-ShareAlike** (CC BY-SA);
-					* Oggi è il sito più visitato al mondo dopo Google.
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Encicplopedie prima di Wikipedia
-						<img src="britannica.jpg" width="75%" />
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Enciclopedie pre-Wikipedia
-						<img src="Encarta2002.jpg" width="40%" />
-						<!-- License check -->
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Due idee rivoluzionarie
-
-						* **Wiki**: chiunque può modificare facilmente gli articoli e 
-						i contenuti, migliorandoli.
-
-						* **Licenza**: il contenuto può essere copiato, modificato e ridistribuito
-						in modo permissivo.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Un'enciclopedia libera
-
-						Wikipedia è libera perché:
-						* Chiunque può usarla gratis.
-						* Chiunque può modificarla.
-						* Il contenuto è di tutti, non di un'azienda.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Il potere della collaborazione
-
-						Come il software libero, Wikipedia si basa sulla **revisione tra pari**.
-
-						* Migliaia di volontari controllano le modifiche.
-						* Gli errori vengono corretti rapidamente.
-						* La discussione porta al consenso e alla neutralità.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Meglio delle Enciclopedie Tradizionali?
-
-						Uno studio di *Nature* (2005) ha mostrato che Wikipedia era accurata quasi quanto l'Enciclopedia Britannica.
-
-						<small>Ref: [Giles, J. Internet encyclopaedias go head to head. Nature 438, 900–901 (2005)](https://www.nature.com/articles/438900a).</small>
-
-						<!--small>Ref: [Feighery, J. Using Wikipedia Effectively. Indiana University Libraries User Guidebook](https://iu.pressbooks.pub/infolit/chapter/using-wikipedia-effectively/).</small-->
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Vantaggi unici
-
-						* Aggiornamento in tempo reale.
-						* Nessun limite di spazio o argomento.
-						* Disponibile a chiunque abbia accesso a internet.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Sapere condiviso
-
-						Oggi Wikipedia esiste in oltre 300 lingue.
-
-						È la dimostrazione che la collaborazione aperta può creare l'opera di riferimento più vasta della storia umana, senza fini di lucro.
-
-						> "Imagine a world in which every single person on the planet is given free access to the sum of all human knowledge."
-					</script>
-				</section>
-
-				<section data-markdown>
-					### \#4: Arduino
-
-					Il progetto nasce nel 2003, da una necessità alla
-					 **Interaction Design Institute Ivrea** in Italia:
-
-					* Serviva un modo facile per realizzare prototipi di dispositivi interattivi;
-					* I microcontrollori esistenti erano troppo costosi o difficili da usare.
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Microcontroller
-
-						<img src="atmega.jpg" width="75%" />
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Microcontrollori
-
-						* Un **microcotrollore** è un chip, 
-						  ma ha bisogno di componenti esterni per funzionare 
-						  (alimentazione, oscillatore, condensatore, ...):
-						<img src="AonB.jpg" width="50%" />
-					</script>
-				</section>
-
-				<section data-markdown>
-					### Programmazione di microcontrollori
-
-					* Anche la **programmazione non è banale**: serve conoscere 
-					  bene l'hardware. 
-					* La domanda di Banzi &amp; Co.
-					<quote>
-						Non possiamo creare un sistema più **semplice**, che **nasconda 
-					  i dettagli tecnici**, e permetta a chiunque di realizzare i propri 
-					  progetti?
-					</quote>
-				</section>
-
-				<section data-markdown>
-					### Wiring e Arduino
-
-					* Nel 2003, in una tesi di laurea uno studente di **Massimo Banzi** 
-					sviluppa **Wiring**: una piattaforma hardware e software per prototipazione rapida;
-					* Nel 2005, lanciano **Arduino**: una versione semplificata di 
-					Wiring, pensata per essere più **accessibile e facile da usare**.
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Arduino
-						<img src="arduino.jpg" width="50%" />
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Arduino è libero
-
-						* Il design hardware è sotto la licenza 
-						**Creative Commons Attribution-ShareAlike** (CC BY-SA);
-						* Il software per programmarlo è rilasciato sotto la licenza **GPL**.
-
-						Questo ha permesso a chiunque di creare le proprie versioni di Arduino, 
-						e di migliorarlo.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Arduino oggi
-
-						* Arduino è usato da milioni di persone in tutto il mondo: 
-						  è alla base di migliaia di progetti;
-						
-						  &nbsp;
-
-						<img src="arduino-cat.png" width="33%" />
-						<img src="arduino-thermostat.png" width="30%" />
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-					### \#5: Il progetto RepRap
-
-					* Pre-2005, le **stampanti 3D** erano **costose** e **proprietarie**;
-					* Erano disponibili solo in ambienti **industriali**.
-
-					<img src="3d-printer.png" width="50%" />
-					</script>
-				</section>
-
-				<section data-markdown>
-					### Self-replicating printers
-
-					* Nel 2005 , **Adrian Bowyer** lancia il progetto **RepRap**: 
-					  creare una stampante 3D che possa stampare i propri componenti;
-					* Il progetto è rilasciato sotto la licenza **GPL**.
-
-					L'idea: se creiamo una prima stampante che si possa replicare, 
-					potremo diffonderla come il software.
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### RAMPS
-						<div style="display: flex">
-							<div style="width: 45%; margin: auto;">
-							<img src="reprap.webp" width="100%" />
-						</div>
-					    <div style="width: 50%; margin: auto; font-size: 0.8em;" data-markdown>
-							<ul>
-							<li>Arduino è spesso usato come <strong>controller</strong> per le stampanti RepRap;</li>
-							<li>Il progetto <strong>RAMPS</strong> 
-								(RepRap Arduino Mega Pololu Shield) è rilasciato 
-								sotto la licenza <strong>GPL</strong>, e permette di <strong>costruire
-							    la propria stampante 3D</strong>.</li>
-						  </ul>
-						</div>
-						</div>
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Stampanti 3D moderne
-
-						* Oggi esistono stampanti 3D molto più **avanzate**; 
-						* La **filosofia libera** è rimasta, ed è alla base del successo 
-						  di tutti i modelli più venduti.
-						
-						<img src="prusa.png" width="50%" />
-					</script>
-				 </section>	
-
-				 <section data-markdown>
+	* Compilatori: **GCC** (GNU Compiler Collection);
+	* Editor di testo: **Emacs**;
+	* Shell: **Bash**;
+
+	Nel 1990, il progetto GNU è quasi completo: 
+	mancano solo il **kernel** e il **file system**.
+</section>
+
+<section data-markdown>
+	### GNU Hurd
+
+	* Il kernel sviluppato per GNU si chiama **Hurd**;
+	* È un progetto tecnicamente molto raffinato ed avanzato (**microkernel**);
+	* Viene sviluppato a partire dal 1990, ma è ancora **incompleto**;
+	* Non è **mai stato completato**, o usato in produzione.
+</section>
+
+<section data-markdown>
+	### \#2: Linux
+
+	Nel 1991, **Linus Torvalds** è un giovane studente finlandese di informatica; 
+
+	* Il corso sistemi operativi usa **Minix**: 
+		una versione di Unix pensata a scopo **didattico**;
+	* È **proprietario**: codice sorgente disponibile, 
+		ma non modificabile o ridistribuibile;
+</section>
+
+<section data-markdown>
+	### Un post su Usenet				
+
+	![Linus Torvalds](linus-email.png)
+</section>
+
+<section data-markdown>
+	### Nasce Linux 
+
+	* Nei mesi seguenti il kernel viene sviluppato;
+	* Altri si uniscono al progetto, suggeriscono idee, 
+		e contribuiscono codice;
+	* È il pezzo mancante per GNU: nasce **GNU/Linux**.
+</section>
+
+<section data-markdown>
+	### Le distribuzioni Linux
+
+	* Nascono le **distribuzioni**: Linux viene combinato con GNU e altri software 
+		per creare dei sistemi completi.
+	* Linux è usato da milioni di persone; è alla base di **Android**, 
+		il sistema operativo più usato al mondo;
+	* È usato in **supercomputer**, **server**, **TV**, **infotainment**, e sistemi 
+	**domotici**.
+</section>
+
+<section data-markdown>
+	### GNU/Linux 
+
+	* Linux non sarebbe stato possibile senza GNU;
+	* GNU non sarebbe utile senza Linux.
+
+	È un esempio di come il software libero possa essere un **bene comune**: ognuno
+	aggiunge qualcosa, e tutti ne beneficiano.
+</section>
+
+<section data-markdown>
+	### Licenze libere
+
+	* Linux è rilasciato sotto la **GPL** (GNU General Public License);
+	* La GPL è una licenza **copyleft**: chiunque può 
+		ridistribuire il software, ma deve farlo con la stessa licenza.
+	* Altre licenze libere: **MIT**, **BSD**, **Apache**, ...
+
+	Per essere libera, una licenza deve garantire le libertà di 
+	**usare**, **modificare**, e **ridistribuire**  il software.
+	Non è sufficiente che il codice sorgente sia disponibile.
+</section>
+
+<section data-markdown>
+	### Lo sviluppo di Linux 
+
+	* Dal 1991, Linus Torvalds guida lo sviluppo di Linux;
+	* Oggi è sviluppato da migliaia di persone;
+	* Grandi aziende partecipano: Google, Facebook (Meta), AMD, Intel, Oracle, NVIDIA, ...
+
+	L'uso di una licenze GPL ha **forzato molte aziende** a pubblicare 
+	i loro driver 
+	(vedi AMD, Intel, in qualche forma anche NVIDIA).
+</section>
+
+<section data-markdown>
+	### \#3: Wikipedia
+
+	* Nel 2001, **Jimmy Wales** e **Larry Sanger** creano Wikipedia: 
+		una **enciclopedia online**, scritta da volontari;
+	* È rilasciata sotto la licenza **Creative Commons Attribution-ShareAlike** (CC BY-SA);
+	* Oggi è il sito più visitato al mondo dopo Google.
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Encicplopedie prima di Wikipedia
+		<img src="britannica.jpg" width="75%" />
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Enciclopedie pre-Wikipedia
+		<img src="Encarta2002.jpg" width="40%" />
+		<!-- License check -->
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Due idee rivoluzionarie
+
+		* **Wiki**: chiunque può modificare facilmente gli articoli e 
+		i contenuti, migliorandoli.
+
+		* **Licenza**: il contenuto può essere copiato, modificato e ridistribuito
+		in modo permissivo.
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Una pagina wikipedia
+		<img src="wikipedia-free-software.png" width="75%" />
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### E il suo sorgente
+		<img src="wikipedia-edit.png" width="95%" />
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Un'enciclopedia libera
+
+		Wikipedia è libera perché:
+		* Chiunque può usarla gratis.
+		* Chiunque può modificarla *facilmente*.
+		* Il contenuto è di tutti, non di un'azienda.
+
+		L'idea di **software libero** si può applicare anche a **contenuti che 
+		non sono software**.
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Il potere della collaborazione
+
+		Come il software libero, Wikipedia è costruita 
+		sulla **revisione tra pari**.
+
+		* Migliaia di volontari controllano le modifiche.
+		* Gli errori vengono corretti rapidamente.
+		* La discussione porta al consenso e alla neutralità.
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Meglio delle Enciclopedie Tradizionali?
+
+		Uno studio di *Nature* (2005) ha mostrato che Wikipedia era accurata quasi quanto l'Enciclopedia Britannica.
+
+		<small>Ref: [Giles, J. Internet encyclopaedias go head to head. Nature 438, 900–901 (2005)](https://www.nature.com/articles/438900a).</small>
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Vantaggi unici
+
+		* Aggiornamento in tempo reale.
+		* Nessun limite di spazio o argomento.
+		* Disponibile a chiunque abbia accesso a internet.
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Sapere condiviso
+
+		Oggi Wikipedia esiste in oltre 300 lingue.
+
+		È la dimostrazione che la collaborazione aperta può creare l'opera di riferimento più vasta della storia umana, senza fini di lucro.
+
+		> "Imagine a world in which every single person on the planet is given free access to the sum of all human knowledge."
+	</script>
+</section>
+
+<section data-markdown>
+	### \#4: Arduino
+
+	Il progetto nasce nel 2003, da una necessità alla
+		**Interaction Design Institute Ivrea** in Italia:
+
+	* Serviva un modo **facile** per realizzare prototipi di dispositivi interattivi;
+	* I microcontrollori esistenti erano costosi, difficili da usare, 
+		o poco flessibili.
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Microcontroller
+
+		<img src="atmega.jpg" width="75%" />
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Microcontrollori
+
+		* Un **microcotrollore** è un chip, 
+			ma ha bisogno di componenti esterni per funzionare 
+			(alimentazione, oscillatore, condensatore, ...):
+		<img src="AonB.jpg" width="50%" />
+	</script>
+</section>
+
+<section data-markdown>
+	### Programmazione di microcontrollori
+
+	* Anche la **programmazione non è banale**: serve conoscere 
+		bene l'hardware. 
+	* La domanda di Banzi &amp; Co.
+<quote>
+Possiamo creare un sistema più **semplice**, che **nasconda 
+i dettagli tecnici**, e permetta a chiunque di realizzare i propri 
+progetti?
+</quote>
+</section>
+
+<section data-markdown>
+	### Wiring e Arduino
+
+	* Nel 2003, in una tesi di laurea uno studente di **Massimo Banzi** 
+	sviluppa **Wiring**: una piattaforma hardware e software per prototipazione rapida;
+	* Nel 2005, lanciano **Arduino**: una versione semplificata di 
+	Wiring, pensata per essere più **accessibile e facile da usare**.
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Arduino
+		<img src="arduino.jpg" width="50%" />
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Arduino è libero
+
+		* Il design hardware è sotto la licenza 
+		**Creative Commons Attribution-ShareAlike** (CC BY-SA);
+		* Il software per programmarlo è rilasciato sotto la licenza **GPL**.
+
+		Questo ha permesso a chiunque di creare le proprie versioni di Arduino, 
+		e di migliorarlo.
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Arduino oggi
+
+		* Arduino è usato da milioni di persone in tutto il mondo: 
+			è alla base di migliaia di progetti;
+		
+			&nbsp;
+
+		<img src="arduino-cat.png" width="33%" />
+		<img src="arduino-thermostat.png" width="30%" />
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+	### \#5: Il progetto RepRap
+
+	* Pre-2005, le **stampanti 3D** erano **costose** e **proprietarie**;
+	* Erano disponibili solo in ambienti **industriali**.
+
+	<img src="3d-printer.png" width="50%" />
+	</script>
+</section>
+
+<section data-markdown>
+	### Self-replicating printers
+
+	* Nel 2005 , **Adrian Bowyer** lancia il progetto **RepRap**: 
+		creare una stampante 3D che possa stampare i propri componenti;
+	* Il progetto è rilasciato sotto la licenza **GPL**.
+
+	L'idea: se creiamo una prima stampante che si possa replicare, 
+	potremo diffonderla come il software.
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### RAMPS
+		<div style="display: flex">
+			<div style="width: 45%; margin: auto;">
+			<img src="reprap.webp" width="100%" />
+		</div>
+		<div style="width: 50%; margin: auto; font-size: 0.8em;" data-markdown>
+			<ul>
+			<li>Arduino è spesso usato come <strong>controller</strong> per le stampanti RepRap;</li>
+			<li>Il progetto <strong>RAMPS</strong> 
+				(RepRap Arduino Mega Pololu Shield) è rilasciato 
+				sotto la licenza <strong>GPL</strong>, e permette di <strong>costruire
+				la propria stampante 3D</strong>.</li>
+			</ul>
+		</div>
+		</div>
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		### Stampanti 3D moderne
+
+		* Oggi esistono stampanti 3D molto più **avanzate**; 
+		* La **filosofia libera** è rimasta, ed è alla base del successo 
+			di tutti i modelli più venduti.
+		
+		<img src="prusa.png" width="50%" />
+	</script>
+	</section>	
+
+<section data-markdown>
 	<script type="text/template">
 	### \#6: Docker e Kubernetes
 
 	All'inizio degli anni 2010, distribuire un'applicazione era spesso un problema:
 
 	* Sul computer dello sviluppatore **funzionava**;
-	* Sul server di produzione **no**;
+	* Sul server di produzione **no**, o **non sempre**;
 	* Ogni macchina aveva versioni diverse di librerie, configurazioni e servizi.
 
 	L'idea: impacchettare il software insieme a tutto ciò che gli serve per funzionare.
@@ -470,7 +496,7 @@
 	* Condivide il kernel del sistema operativo;
 	* Contiene librerie, dipendenze e configurazione dell'applicazione.
 
-	In pratica: "se funziona nel container, funziona ovunque ci sia Docker".
+	Se funziona nel container, funziona ovunque.
 	</script>
 </section>
 
@@ -492,13 +518,21 @@
 
 <section data-markdown>
 	<script type="text/template">
+		### Docker Hub
+		<img src="docker-hub.png" width="95%" />
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
 	### Docker è software libero
 
-	* Docker usa tecnologie libere già presenti in Linux;
-	* Molti componenti fondamentali sono rilasciati con licenze libere, come **Apache 2.0**;
+	* Docker usa tecnologie libere già presenti in **Linux**;
+	* I componenti fondamentali sono rilasciati con licenze libere, come **Apache 2.0**;
 	* Ha creato un ecosistema enorme di strumenti, immagini e pratiche condivise.
 
-	Docker ha cambiato il modo in cui sviluppiamo, testiamo e distribuiamo software.
+	Docker ha cambiato il modo di distribuire software: sarebbe stato *improponibile* 
+	con un sistema di licenze chiuse.
 	</script>
 </section>
 
@@ -508,15 +542,13 @@
 
 	Docker risolve bene il problema del singolo container.
 
-	Ma cosa succede se abbiamo:
+	Ma cosa succede se abbiamo un sistema complesso, con:
 
-	* Centinaia di container;
-	* Più server;
-	* Aggiornamenti senza interrompere il servizio;
-	* Scalabilità automatica;
-	* Gestione dei guasti?
+	* Centinaia di container o molti servre;
+	* Necessità di Aggiornamenti senza interruzioni di servizio;
+	* Bilanciamento del carico e scalabilità;
 
-	Serve un sistema per **orchestrare** i container.
+	Nascono sistemi   per **orchestrare** i container.
 	</script>
 </section>
 
@@ -526,13 +558,13 @@
 
 	* Kubernetes nasce da Google nel 2014;
 	* È oggi mantenuto dalla **Cloud Native Computing Foundation**;
-	* Permette di descrivere lo stato desiderato di un sistema:
+	* Permette di **descrivere lo stato desiderato** di un sistema:
 	  * quali applicazioni devono girare;
 	  * quante copie servono;
 	  * come aggiornarle;
 	  * come esporle in rete.
 
-	Il sistema prova continuamente a far coincidere la realtà con questa descrizione.
+	Il sistema **gestisce in automatico**  i container per mantenere lo stato desiderato.
 	</script>
 </section>
 
