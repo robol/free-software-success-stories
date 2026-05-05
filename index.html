@@ -352,8 +352,8 @@ può risolvere il problema, nonostante abbia comprato la stampante.
 		**Interaction Design Institute Ivrea** in Italia:
 
 	* Serviva un modo **facile** per realizzare prototipi di dispositivi interattivi;
-	* I microcontrollori esistenti erano costosi, difficili da usare, 
-		o poco flessibili.
+	* I microcontrollori esistenti erano **costosi**, **difficili da usare**, 
+		o **poco flessibili**.
 </section>
 
 <section data-markdown>
@@ -489,13 +489,15 @@ progetti?
 	<script type="text/template">
 	### \#6: Docker e Kubernetes
 
-	All'inizio degli anni 2010, distribuire un'applicazione era spesso difficile:
+	All'inizio degli anni 2010, distribuire un'applicazione
+	era difficile:
 
 	* Sul computer dello sviluppatore **funzionava**;
 	* Sul server di produzione **no**, o **non sempre**;
-	* Il problema: versioni diverse di **librerie**, **configurazioni** e **servizi**.
+	* La causa erano versioni diverse di **librerie** o **configurazioni**.
 
-	L'idea: **impacchettare il software** insieme a tutto ciò che gli serve per funzionare.
+	Idea: **impacchettare il software** insieme a tutto ciò che gli serve per funzionare
+	  → nascono i **container**.
 	</script>
 </section>
 
@@ -507,9 +509,9 @@ progetti?
 
 	* Non è una macchina virtuale completa;
 	* Condivide il kernel del sistema operativo;
-	* Contiene librerie, dipendenze e configurazione dell'applicazione.
+	* Contiene librerie e configurazione dell'applicazione.
 
-	*Se funziona nel container, funziona ovunque.*
+	*"Se funziona nel container, funziona ovunque"*
 	</script>
 </section>
 
@@ -517,15 +519,14 @@ progetti?
 	<script type="text/template">
 	### Docker
 
-	* La maggior parte dei sistemi di gestione dei container sono software libero;
+	* La maggior parte dei **sistemi di gestione dei container** sono **software libero** (LXC, Docker, OpenVZ, Podman, ...);
 	* Docker nasce nel 2013 e rende i container **facili da usare**;
-	* Introduce un formato semplice per descrivere un ambiente: il **Dockerfile**;
+	* Introduce un formato semplice per descriverli: i **Dockerfile**;
 	* Permette di distribuire applicazioni come **immagini** riproducibili.
 
 	```dockerfile
-	FROM python:3.12
-	COPY . /app
-	CMD ["python", "/app/server.py"]
+	FROM wordpress:latest
+	COPY . /var/www/html/wp-content/themes/my-theme
 	```
 	</script>
 </section>
@@ -543,7 +544,7 @@ progetti?
 
 	* Docker usa tecnologie libere già presenti in **Linux**;
 	* I componenti fondamentali sono rilasciati con licenze libere, come **Apache 2.0**;
-	* Ha creato un ecosistema enorme di strumenti, immagini e pratiche condivise.
+	* Ha creato un ecosistema di **strumenti**, **immagini** e **pratiche condivise**.
 
 	Docker ha cambiato il modo di distribuire software: sarebbe stato *improponibile* 
 	con un sistema di licenze chiuse!
@@ -554,9 +555,9 @@ progetti?
 	<script type="text/template">
 	### Orchestrare i container
 
-	Docker risolve bene il problema del singolo container.
+	Docker risolve il problema di un'applicazione (ad es., Wordpress).
 
-	Ma cosa succede se abbiamo un sistema complesso, con:
+	Ma cosa succede se abbiamo un **sistema complesso**, con:
 
 	* Centinaia di container o molti servizi;
 	* Necessità di aggiornamenti senza interruzioni;
@@ -570,7 +571,7 @@ progetti?
 	<script type="text/template">
 	### Kubernetes
 
-	* Kubernetes nasce da Google nel 2014;
+	* Kubernetes nasce da **Google** nel 2014;
 	* È oggi mantenuto dalla **Cloud Native Computing Foundation**;
 	* Permette di **descrivere lo stato desiderato** di un sistema:
 	  * quali applicazioni devono girare;
